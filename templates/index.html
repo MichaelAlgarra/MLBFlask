@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Input Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Model Prediction Form</h1>
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="playerfirstname">Input 1:</label>
+                <input type="text" id="playerfirstname" name="playerfirstname" placeholder="Enter a player's first name" required>
+            </div>
+            <div class="form-group">
+                <label for="input2">Input 2:</label>
+                <input type="text" id="input2" name="input2" placeholder="Enter value for input 2" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
